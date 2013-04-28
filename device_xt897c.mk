@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
 
-LOCAL_PATH := device/motorola/xt897
+LOCAL_PATH := device/motorola/xt897c
 
 # xt897 specific overlay
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -26,7 +26,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 #misc
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.aplogd.enable=1 \
-    ro.product.model.exif=XT897
+    ro.product.model.exif=XT897C
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
