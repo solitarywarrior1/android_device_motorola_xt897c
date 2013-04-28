@@ -34,10 +34,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #telephony
 PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnGsmDevice=1 \
+    telephony.lteOnCdmaDevice=1 \
     ro.telephony.ril.v3=signalstrength \
     DEVICE_PROVISIONED=1 \
-    ro.telephony.default_network=3
+    ro.telephony.default_network=8
+    ro.cdma.home.operator.numeric=310120
+    ro.cdma.home.operator.alpha=Sprint
+    ro.config.svlte1x=true
 
 # IDC
 PRODUCT_COPY_FILES += \

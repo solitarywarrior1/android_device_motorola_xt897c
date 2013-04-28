@@ -4,7 +4,7 @@
 # inherit from the proprietary version
 -include vendor/motorola/xt897/BoardConfigVendor.mk
 
-LOCAL_PATH := device/motorola/xt897
+LOCAL_PATH := device/motorola/xt897c
 
 # xt897 liblight
 TARGET_USES_MOTOROLA_MSM8960_XT897_LIBLIGHT := true
@@ -26,4 +26,3 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 #bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-
