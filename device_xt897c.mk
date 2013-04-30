@@ -1,4 +1,3 @@
-
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -44,7 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.subscription=1 \
     persist.radio.add_power_save=1 \
     ro.mot.deep.sleep.supported=true \
-    ro.mot.hw.uaprof=http://device.sprintpcs.com/Motorola/XT897/latest
+    ro.mot.hw.uaprof=http://device.sprintpcs.com/Motorola/XT897/latest \
+    ro.telephony.ril.v3=skipnullaid
 
 # IDC
 PRODUCT_COPY_FILES += \
