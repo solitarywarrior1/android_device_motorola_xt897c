@@ -37,10 +37,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnCdmaDevice=1 \
     ro.telephony.ril.v3=signalstrength \
     DEVICE_PROVISIONED=1 \
-    ro.telephony.default_network=8
-    ro.cdma.home.operator.numeric=310120
-    ro.cdma.home.operator.alpha=Sprint
-    ro.config.svlte1x=true
+    ro.telephony.default_network=8 \
+    ro.cdma.home.operator.numeric=310120 \
+    ro.cdma.home.operator.alpha=Sprint \
+    ro.config.svlte1x=true \
+    ro.cdma.subscription=1 \
+    persist.radio.add_power_save=1 \
+    ro.mot.deep.sleep.supported=true \
+    ro.mot.hw.uaprof=http://device.sprintpcs.com/Motorola/XT897/latest
 
 # IDC
 PRODUCT_COPY_FILES += \
